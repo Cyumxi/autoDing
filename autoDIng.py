@@ -30,7 +30,7 @@ def detect_emulator_status(serial):
 
 def connectDevice(serial):
     
-    if detect_emulator_status("1C031FDEE007VD"):
+    if detect_emulator_status(f"{serial}") == "device":
 
 
         # client.remote_connect("1C031FDEE007VD", 5555)
@@ -51,7 +51,7 @@ def connectDevice(serial):
 
 # Default is "127.0.0.1" and 5037
 
-device = connectDevice("1C031FDEE007VD")
+device = connectDevice("R52R208TYKH")
 
 
 
