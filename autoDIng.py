@@ -55,11 +55,11 @@ device = connectDevice("R52R208TYKH")
 
 
 
-raiseWake(device, "2333")
+# raiseWake(device, "2333")
 
-device.app_start("com.alibaba.android.rimet")
+# device.app_start("com.alibaba.android.rimet")
 
-sleep(2)
+# sleep(2)
 
 result = device.screenshot()
 result.show()
